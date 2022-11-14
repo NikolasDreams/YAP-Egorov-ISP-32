@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 
 namespace ProgLang
@@ -7,24 +7,27 @@ namespace ProgLang
     {
         static void Main()
         {
-            double[] h = Console.ReadLine().Split(' ').Select(x => double.Parse(x)).ToArray();
-            double v = double.Parse(Console.ReadLine());
+            Console.Write("Введите массив: ");
+            double[] m = Console.ReadLine().Split(' ').Select(b => double.Parse(b)).ToArray();
+            Console.Write("Введите число x: ");
+            double x = double.Parse(Console.ReadLine());
 
-            Array.Sort(h);
-            for (int i = 0; i < h.Length; i++)
+            Array.Sort(m);
+            
+            for (int i = 0; i < m.Length; i++)
             {
-                string g = (h[i]).ToString();
-                if (h[i] % 2 == 0 && g.EndsWith('0') || g.EndsWith('2') || g.EndsWith('4') || g.EndsWith('6') || g.EndsWith('8'))
+                string w = (m[i]).ToString();
+                if (m[i] % 2 == 0 && w.EndsWith('0') || w.EndsWith('2') || w.EndsWith('4') || w.EndsWith('6') || w.EndsWith('8'))
                 {
-                    Console.Write(h[i] + " ");
+                    Console.Write(m[i] + " ");
                 }
             }
             Console.WriteLine();
-            for (int i = 0; i < h.Length; i++)
+            for (int i = 0; i < m.Length; i++)
             {
-                if (h[i] % 2 != 0 && h[i] < v)
+                if (m[i] % 2 != 0 && m[i] < x)
                 {
-                    Console.Write(h[i] + " ");
+                    Console.Write(m[i] + " ");
                 }
             }
         }
