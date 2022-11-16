@@ -12,7 +12,7 @@ namespace ProgLang
             Console.Write("Введите число x: ");
             double x = double.Parse(Console.ReadLine());
 
-            Array.Sort(m);
+           
             Console.WriteLine();
             for (int i = 0; i < m.Length; i++)
             {
@@ -21,7 +21,7 @@ namespace ProgLang
                     Console.Write(m[i] + " ");
                 }
             }
-            
+             Array.Sort(m);
             for (int i = 0; i < m.Length; i++)
             {
                 string w = (m[i]).ToString();
