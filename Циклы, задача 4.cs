@@ -10,7 +10,7 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         { 
-Console.Write("число n: ");
+Console.Write("Г·ГЁГ±Г«Г® n: ");
             int n = int.Parse(Console.ReadLine());
             int x = 0, y = 0;
             for (int j = 0; j <= n; j++)
