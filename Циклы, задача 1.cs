@@ -10,9 +10,9 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {int d, c,e;
-            Console.Write("число a: ");
+            Console.Write("Г·ГЁГ±Г«Г® a: ");
             int a = int.Parse(Console.ReadLine());
-            Console.Write("число b: ");
+            Console.Write("Г·ГЁГ±Г«Г® b: ");
             int b = int.Parse(Console.ReadLine());
             int r = (int)Math.Log10(b) + 1;
             c = b;
