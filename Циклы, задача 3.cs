@@ -10,8 +10,8 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            //Задача 3
-            Console.Write("Высота елочки: ");
+            //Г‡Г Г¤Г Г·Г  3
+            Console.Write("Г‚Г»Г±Г®ГІГ  ГҐГ«Г®Г·ГЄГЁ: ");
             int a = int.Parse(Console.ReadLine());
             int w = 0;
             for (int j = 0; j <= a; j++)
