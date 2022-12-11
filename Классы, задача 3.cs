@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp5
+namespace ConsoleApp7
 {
     class XYZ
     {
@@ -17,29 +17,29 @@ namespace ConsoleApp5
 
         public void Prymaiy()
         {
-           double d=Math.Sqrt((xP * xP - xM * xM) + (yP * yP - yM * yM) + (zP * zP - zM * zM));
+            double d = Math.Sqrt((xP - xM )* (xP - xM) + (yP - yM)*(yP - yM) + (zP - zM)*(zP - zM));
             Console.WriteLine(Math.Round(d, 5));
         }
-        public void Verticalno ()
+        public void Verticalno()
         {
-            double t = Math.Sqrt((xP * xP - xM * xM) + (yP * yP - yM * yM));
+            double t = Math.Sqrt((xP - xM) * (xP - xM) + (yP - yM) * (yP - yM));
             Console.WriteLine(Math.Round(t, 5));
         }
 
     }
-        class Program
+    class Program
     {
         static void Main(string[] args)
         {
             XYZ tochka = new XYZ();
-            Console.WriteLine("точки мухи");
+            Console.WriteLine("РєРѕРѕСЂРґРёРЅР°С‚С‹ РјСѓС…Рё");
             Console.Write("x=");
             tochka.xM = double.Parse(Console.ReadLine());
             Console.Write("y=");
             tochka.yM = double.Parse(Console.ReadLine());
             Console.Write("z=");
             tochka.zM = double.Parse(Console.ReadLine());
-            Console.WriteLine("точки паука");
+            Console.WriteLine("РєРѕРѕСЂРґРёРЅР°С‚С‹ РїРѕСѓРєР°");
             Console.Write("x=");
             tochka.xP = double.Parse(Console.ReadLine());
             Console.Write("y=");
@@ -53,7 +53,7 @@ namespace ConsoleApp5
             }
             else
             {
-                Console.WriteLine("Муха не на полу");
+                Console.WriteLine("РјСѓС…Р° РЅРµ РЅР° РїРѕР»Сѓ");
             }
 
         }
