@@ -46,7 +46,7 @@ namespace ConsoleApp7
             tochka.yP = double.Parse(Console.ReadLine());
             Console.Write("z=");
             tochka.zP = double.Parse(Console.ReadLine());
-            if (tochka.yM <= 0)
+            if (tochka.yM == 0)
             {
                 tochka.Prymaiy();
                 tochka.Verticalno();
