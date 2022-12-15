@@ -35,7 +35,7 @@ namespace ConsoleApp1
             {
                 arr[i] = r;
                 r++;
-                Console.Write(arr[i] + " ");
+                Console.Write(arr[i]*arr[i] + " ");
             }
             Console.WriteLine();
             return arr;
